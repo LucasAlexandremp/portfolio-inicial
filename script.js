@@ -1,5 +1,6 @@
 
-function ativaLetra(eLemento){
+function escrevendoLetra(){
+  function ativaLetra(eLemento){
     const arrTexto = elemento.innerHTML.split("");
     elemento.innerHTML = "";
     arrTexto.fortEach((letra, i)=>{
@@ -11,3 +12,11 @@ function ativaLetra(eLemento){
 
 const titulo = document.querySelector(".digitando");
 ativaLetra(titulo);
+}
+
+
+const ativaMenu = document.querySelector(".fa-bars");
+
+ativaMenu.addEventlistener("click", ()=>{
+  ativaMenu.classList.toggle("fa-x")
+})
